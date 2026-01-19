@@ -6,7 +6,7 @@ Created on Sun May  2 23:29:35 2021
 @author: hasanabukassim
 """
 
-# The steps are described in Tutorial 4 Question 6.
+# The steps are described in Tutorial 6 Question 6.
 
 #----------------------------------------------------------------------------#
 
@@ -182,7 +182,12 @@ ypredict3 = lr2.coef_[0]*xpredict + lr2.coef_[1]*xpredict**2 + lr2.intercept_
 
 # Method 2. Use the predict function in scikit-learn.
 #           ypredict2 = predicted y using xpredict
-ypredict4=lr.predict(xpredict.reshape(-1,1))
+# Build polynomial feature matrix for prediction: [x, x^2]
+xpredict2 = np.column_stack((xpredict, xpredict**2))
+
+# Correct: use lr2 (polynomial model)
+ypredict4 = lr2.predict(xpredict2)
+
 
 # Print the predictions from the two methods.
 # Both methods should return the same predicted values.
@@ -197,4 +202,4 @@ print('Method 2: ', ypredict4)
 plt.show()
 
 # Save the graph in the png format in an external file.
-plt.savefig('t4q7.png')
+plt.savefig('t6q7.png')
