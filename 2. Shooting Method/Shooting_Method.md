@@ -135,9 +135,7 @@ This highlights the trade-off between **conceptual simplicity** and **computatio
 
 ## 8. Core Code (Reference Implementation)
 
-This section collects the **minimal, reusable core code** for the shooting method.  
-It is intended for **future learning, revision, and reuse**, independent of plotting
-or extended accuracy comparisons.
+This section collects the **minimal, reusable core code** for the shooting method. It is intended for **future learning, revision, and reuse**, independent of plotting or extended accuracy comparisons.
 
 ---
 
@@ -239,8 +237,7 @@ Allows to play and see what happens for many non pre-defined scenarios.”
 — Dr. Juan Carlos Algaba, SIF3012 Computational Physics
 
 Interpretation:
-Allowing flexible initial guesses strengthens intuition about undershoot, overshoot,
-and convergence behavior in boundary value problems.
+Allowing flexible initial guesses strengthens intuition about undershoot, overshoot, and convergence behavior in boundary value problems.
 
 ---
 

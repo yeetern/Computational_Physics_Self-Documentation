@@ -214,8 +214,7 @@ This Euler implementation is useful as:
 - a tool to study numerical convergence,
 - a teaching reference for stability and error growth.
 
-Because Euler’s method is explicit and simple, deviations from the exact solution
-are easy to interpret physically.
+Because Euler’s method is explicit and simple, deviations from the exact solution are easy to interpret physically.
 
 ---
 
@@ -228,8 +227,7 @@ are easy to interpret physically.
 > — **Dr. Juan Carlos Algaba**, SIF3012 Computational Physics
 
 **Interpretation:**  
-Unexpected behavior at large initial values or large step sizes arises from the
-first-order nature of the Euler method and the defined input rule, not from a coding error.
+Unexpected behavior at large initial values or large step sizes arises from the first-order nature of the Euler method and the defined input rule, not from a coding error.
 
 ---
 
@@ -241,8 +239,7 @@ This assignment highlights that:
 - initial conditions influence error growth,
 - numerical methods must always be interpreted through their assumptions.
 
-The Euler method is best viewed as a **conceptual and diagnostic tool**, rather than
-a high-precision numerical solver.
+The Euler method is best viewed as a **conceptual and diagnostic tool**, rather than a high-precision numerical solver.
 
 ---
 
