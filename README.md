@@ -1,102 +1,188 @@
-🧮 Computational Physics — Numerical Methods Collection
+# 🧮 Computational Physics — Numerical Methods & Simulations
 
-This repository documents the key numerical methods learned in SIF3012 Computational Physics.
-Each method is implemented in Python with clear explanations, comments, and example outputs.
-The aim is to build a concise but rigorous reference for solving differential equations, boundary-value problems, and signal-processing tasks commonly encountered in physics.
+This repository is a growing collection of numerical methods, simulations, and computational tools developed during and beyond SIF3012 – Computational Physics.
 
-📂 Contents
-1. Shooting Method
+All methods are implemented in Python, with emphasis on:
+- physical intuition
+- numerical stability & accuracy
+- clean, reusable code
+- research-oriented workflows
 
-Solves boundary-value problems by converting them into a sequence of initial-value problems.
+The repository serves both as a learning reference and a technical portfolio for computational physics, data analysis, and simulation-based research.
 
-Useful for: quantum well problems, beam equations, nonlinear ODEs.
+---
 
-Notes include convergence behaviour, sensitivity to initial guesses, and stability issues.
+## 📂 Repository Structure & Topics
+### 1. Ordinary Differential Equations (ODEs)
 
-2. Finite Difference Method (FDM)
+Folders:
+- 1. Euler Method
+- 2. Shooting Method
 
-Approximates derivatives using discrete stencils on a spatial grid.
+Covered methods:
+- Euler method (stability, truncation error)
+- Shooting method for boundary-value problems
+- Sensitivity to initial guesses
+- Convergence and failure modes
 
-Used for: heat equation, wave equation, Poisson equation, diffusion problems.
+Typical applications:
+- Classical mechanics
+- Quantum wells
+- Beam equations
+- Nonlinear ODE systems
 
-Includes forward/central/backward schemes, stability comments, and example plots.
+---
 
-3. Euler Method
+### 2. Boundary-Value Problems & Linear Systems
 
-First-order ODE solver that updates solutions via forward stepping.
+Folders:
+- 3. Finite Difference Method
+- How to solve Ax=b matrix
 
-Ideal for teaching stability, truncation error, and numerical divergence.
+Covered techniques:
+- Finite difference stencils (forward / backward / central)
+- Matrix formulation of differential equations
+- Solving linear systems via LU, Gauss elimination
+- Error analysis and grid dependence
 
-Scripts also compare Euler with higher-order methods.
+Applications:
+- Poisson equation
+- Diffusion problems
+- Electrostatics and steady-state systems
 
-4. Discrete Fourier Transform (DFT)
+---
 
-Converts time-domain signals into frequency components.
+### 3. Partial Differential Equations (PDEs)
 
-Applications: noise filtering, signal analysis, spectral interpretation.
+Folder:
+- pde
+- Topics include:
+- Discretization of PDEs
+- Spatial–temporal grids
+- Stability considerations
+- Physical interpretation of numerical solutions
 
-Includes sampling considerations, aliasing, and FFT implementation.
+---
 
-🎯 Purpose of This Repository
+### 4. Fourier Analysis & Signal Processing
 
-This repository is created for:
+Folder:
+- 4. Discrete Fourier Transform
 
-Documentation of course content and coding practice.
+Covered concepts:
+- Discrete Fourier Transform (DFT)
+- Fast Fourier Transform (FFT)
+- Frequency-domain filtering
+- Aliasing and sampling effects
 
-Learning reference for future students taking computational physics.
+Applications:
+- Periodic noise removal
+- Spectral analysis
+- Image and signal processing
 
-Reusable templates for numerical simulations in research projects.
+---
 
-Demonstrating numerical skills in a clean, well-organized GitHub portfolio.
+### 5. Probability & Monte Carlo Methods
 
-🚀 How to Use
+Folder:
+- Probability (Monte Carlo)
+
+Includes:
+- Random sampling techniques
+- Monte Carlo estimation
+- Probabilistic interpretation of numerical results
+- Links between statistics and physical systems
+
+---
+
+### 6. Machine Learning (Foundations & Tutorials)
+
+Folder:
+- Machine Learning/Tutorial
+
+Focus:
+- Introductory ML concepts
+- Data-driven modeling
+- Foundations for future physics–ML integration
+
+---
+
+### 7. Self-Learning, Experiments & Exploration
+
+Folders:
+- Z. Interesting Stuff
+- Z. Self_Learning(Play)/Simulate
+
+Purpose:
+- Open-ended simulations
+- Numerical experiments
+- Exploratory coding beyond syllabus constraints
+
+---
+
+### 8. Final & Consolidated Work
+
+Folders:
+- Final
+- Final 2
+
+Contains polished scripts, assessments, and finalized implementations consolidating multiple numerical methods.
+
+## 🎯 Purpose of This Repository
+
+This repository is designed to:
+- Document computational physics training
+- Serve as a reference for future students
+- Provide reusable simulation templates
+- Demonstrate numerical & coding competence for:
+    - research internships
+    - final-year projects
+    - computational research roles
+
+## 🚀 How to Use
 
 Clone the repository:
 
+```bash
 git clone <repo-url>
+```
+
+Navigate to any topic folder, then run:
+
+```bash
+python <script_name>.py
+```
 
 
-Navigate to any folder (e.g., DFT, Euler Method).
+Each script typically includes:
+- Mathematical background
+- Numerical logic and assumptions
+- Well-commented Python implementation
+- Visualization (when applicable)
 
-Run the corresponding Python script:
+## 🛠 Dependencies
 
-python Block1_23006131.py
-
-
-Each script contains:
-
-Mathematical background
-
-Step-by-step implementation
-
-Annotated code
-
-Generated plots (when applicable)
-
-🛠 Dependencies
-
-Install required libraries using:
-
+Install required packages:
+```bash
 pip install numpy matplotlib
+```
 
-📘 Learning Outcomes
+(Some sections may later include scipy, pandas, or ML libraries.)
 
-By exploring this repository, you will:
+## 📘 Learning Outcomes
 
-Understand how major numerical methods work.
+By working through this repository, you will learn how to:
+- Translate physical models into numerical algorithms
+- Evaluate accuracy, stability, and computational cost
+- Diagnose numerical failure modes
+- Build intuition for choosing the right method
+- Develop research-ready simulation pipelines
 
-Compare accuracy, stability, and computational cost.
+## 📄 License
+Released under the MIT License.
+Free to use, modify, and adapt for academic or personal projects.
 
-Learn how to translate mathematical models into real simulations.
+## 🤝 Contributions
 
-Build intuition for when each method should be used.
-
-📄 License
-
-This project is released under the MIT License.
-Feel free to fork, modify, and use the code for academic or personal projects.
-
-🤝 Contributions
-
-Suggestions, improvements, or additional numerical methods are welcome.
-You may open an issue or submit a pull request.
+Suggestions, improvements, or extensions are welcome.
+Feel free to open an issue or submit a pull request.
