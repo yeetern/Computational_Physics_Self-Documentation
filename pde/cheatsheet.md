@@ -85,8 +85,7 @@ u_{i+1,j} + u_{i-1,j} + u_{i,j+1} + u_{i,j-1}
 
 ### Governing Equation
 \[
-\frac{\partial u}{\partial t}
-=
+\frac{\partial u}{\partial t}=
 D \frac{\partial^2 u}{\partial x^2}
 \]
 
