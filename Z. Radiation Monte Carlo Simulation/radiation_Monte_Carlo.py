@@ -238,6 +238,8 @@ def main():
     plt.title("Gamma Attenuation: Intensity vs Thickness")
     plt.legend()
     plt.grid(True, alpha=0.3)
+    plt.savefig('intensity_vs_thickness.png')
+
 
     # Plot 2: semi-log to check approximate exponential
     plt.figure()
@@ -250,6 +252,7 @@ def main():
     plt.title("Semi-log plot (exponential trend check)")
     plt.legend()
     plt.grid(True, which="both", alpha=0.3)
+    plt.savefig('semi-log.png')
 
     # Plot 3: histogram of absorption depths (energy loss ON)
     plt.figure()
@@ -259,6 +262,8 @@ def main():
     plt.ylabel("Counts")
     plt.title("Histogram: Photon Absorption Depths (energy loss ON)")
     plt.grid(True, alpha=0.3)
+
+    plt.savefig('radiation_histograms.png')
 
     plt.show()
 
